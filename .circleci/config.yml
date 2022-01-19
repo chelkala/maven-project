@@ -1,8 +1,8 @@
 version: 2.1
 jobs:
-  build-and-test:
+  build:
     docker:
-      - image: cimg/openjdk:11.0
+      - image: maven
     steps:
       - checkout
       - run:
